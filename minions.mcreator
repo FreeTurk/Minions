@@ -590,6 +590,98 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "dirt_minion_1_gui"
+    },
+    {
+      "name": "DirtMinion2",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_2"
+    },
+    {
+      "name": "DirtMinion2GUI",
+      "type": "gui",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_2_gui"
+    },
+    {
+      "name": "DirtMinion2R",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_2_r"
+    },
+    {
+      "name": "DirtMinion2AI",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_2_ai",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CompressedDirt",
+      "type": "block",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "compressed_dirt"
+    },
+    {
+      "name": "CompDirtR",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "comp_dirt_r"
+    },
+    {
+      "name": "CompDirtRR",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "comp_dirt_rr"
+    },
+    {
+      "name": "CompressedDirtx2",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "compressed_dirtx_2"
     }
   ],
   "variable_elements": [],
@@ -602,7 +694,10 @@
       "block.minions.iron_minion_2": "Iron Minion MK2",
       "item.minions.compressed_iron_ingot": "Compressed Iron Ingot",
       "block.minions.iron_minion_3": "Iron Minion MK3",
+      "block.minions.compressed_dirt": "Compressed Dirt",
+      "block.minions.dirt_minion_2": "Dirt Minion MK2",
       "block.minions.dirt_minion_1": "Dirt Minion MK1",
+      "block.minions.compressed_dirtx_2": "x2 Compressed Dirt",
       "block.minions.compressed_iron_block": "Compressed Iron Block",
       "item.minions.copper_ingot": "Copper",
       "item.minions.copper_nugget": "Copper Nugget",

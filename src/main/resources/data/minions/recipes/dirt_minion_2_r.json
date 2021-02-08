@@ -1,0 +1,42 @@
+{
+  "group": "minions",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minions:compressed_dirt"
+    },
+    "1": {
+      "item": "minions:compressed_dirt"
+    },
+    "2": {
+      "item": "minions:compressed_dirt"
+    },
+    "3": {
+      "item": "minions:compressed_dirt"
+    },
+    "4": {
+      "item": "minecraft:stone_shovel"
+    },
+    "5": {
+      "item": "minions:compressed_dirt"
+    },
+    "6": {
+      "item": "minions:compressed_dirt"
+    },
+    "7": {
+      "item": "minions:dirt_minion_1"
+    },
+    "8": {
+      "item": "minions:compressed_dirt"
+    }
+  },
+  "result": {
+    "item": "minions:iron_minion_2",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "group": "minions",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minions:compressed_dirt"
+    }
+  ],
+  "result": {
+    "item": "minecraft:dirt",
+    "count": 4
+  }
+}
