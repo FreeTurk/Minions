@@ -1,0 +1,9 @@
+{
+  "parent": "minions:custom/shovel_minion_temp",
+  "textures": {
+    "all": "minions:blocks/iron_minion1",
+    "particle": "minions:blocks/iron_minion1",
+    "2": "minions:blocks/dirt_steve",
+    "3": "minions:blocks/wooden_shovel"
+  }
+}

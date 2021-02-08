@@ -1,0 +1,17 @@
+{
+  "_fv": 15,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:CopperBlock"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "blocks/copper",
+    "namespace": "forge"
+  }
+}

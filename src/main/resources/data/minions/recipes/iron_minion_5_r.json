@@ -1,0 +1,42 @@
+{
+  "group": "minions",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minions:compressed_iron_ingot"
+    },
+    "1": {
+      "item": "minions:compressed_iron_ingot"
+    },
+    "2": {
+      "item": "minions:compressed_iron_ingot"
+    },
+    "3": {
+      "item": "minions:compressed_iron_ingot"
+    },
+    "4": {
+      "item": "minecraft:netherite_pickaxe"
+    },
+    "5": {
+      "item": "minions:compressed_iron_ingot"
+    },
+    "6": {
+      "item": "minions:compressed_iron_ingot"
+    },
+    "7": {
+      "item": "minions:iron_minion_4"
+    },
+    "8": {
+      "item": "minions:compressed_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "minions:iron_minion_5",
+    "count": 1
+  }
+}

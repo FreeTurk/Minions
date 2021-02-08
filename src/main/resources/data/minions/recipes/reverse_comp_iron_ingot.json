@@ -1,0 +1,13 @@
+{
+  "group": "minions",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minions:compressed_iron_ingot"
+    }
+  ],
+  "result": {
+    "item": "minions:compressed_iron_nugget",
+    "count": 9
+  }
+}

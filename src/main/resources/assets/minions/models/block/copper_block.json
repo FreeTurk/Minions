@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "minions:blocks/copper_ore_block",
+    "particle": "minions:blocks/copper_ore_block"
+  }
+}

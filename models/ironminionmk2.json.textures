@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "iron_pickaxe",
+        "3": "stevehi"
+      },
+      "name": "default"
+    }
+  }
+}

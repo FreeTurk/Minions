@@ -1,0 +1,9 @@
+{
+  "parent": "minions:custom/ironminionmk3",
+  "textures": {
+    "all": "minions:blocks/iron_minion3",
+    "particle": "minions:blocks/iron_minion3",
+    "1": "minions:blocks/golden_pickaxe",
+    "3": "minions:blocks/stevehi"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "group": "minions",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minions:copper_block"
+    }
+  ],
+  "result": {
+    "item": "minions:copper_ingot",
+    "count": 9
+  }
+}

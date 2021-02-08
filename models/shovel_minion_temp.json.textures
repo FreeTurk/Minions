@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "dirt_steve",
+        "3": "wooden_shovel"
+      },
+      "name": "default"
+    }
+  }
+}

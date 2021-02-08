@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "minions:block/iron_minion_2"
+    },
+    "facing=east": {
+      "model": "minions:block/iron_minion_2",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minions:block/iron_minion_2",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minions:block/iron_minion_2",
+      "y": 270
+    }
+  }
+}

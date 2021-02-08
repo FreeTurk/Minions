@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minions:blocks/compressed_iron_block",
+    "up": "minions:blocks/compressed_iron_block",
+    "north": "minions:blocks/compressed_iron_block",
+    "east": "minions:blocks/compressed_iron_block",
+    "south": "minions:blocks/compressed_iron_block",
+    "west": "minions:blocks/compressed_iron_block",
+    "particle": "minions:blocks/compressed_iron_block"
+  }
+}

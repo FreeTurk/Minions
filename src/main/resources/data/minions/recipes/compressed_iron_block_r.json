@@ -1,0 +1,37 @@
+{
+  "group": "minions",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minions:compressed_iron_ingot"
+    },
+    {
+      "item": "minions:compressed_iron_ingot"
+    },
+    {
+      "item": "minions:compressed_iron_ingot"
+    },
+    {
+      "item": "minions:compressed_iron_ingot"
+    },
+    {
+      "item": "minions:compressed_iron_ingot"
+    },
+    {
+      "item": "minions:compressed_iron_ingot"
+    },
+    {
+      "item": "minions:compressed_iron_ingot"
+    },
+    {
+      "item": "minions:compressed_iron_ingot"
+    },
+    {
+      "item": "minions:compressed_iron_ingot"
+    }
+  ],
+  "result": {
+    "item": "minions:compressed_iron_block",
+    "count": 1
+  }
+}
