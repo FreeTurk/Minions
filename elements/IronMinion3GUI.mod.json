@@ -107,7 +107,7 @@
           "dropItemsWhenNotBound": true,
           "name": "Slot #6",
           "x": 187,
-          "y": 72
+          "y": 82
         }
       },
       {
@@ -118,7 +118,7 @@
           "dropItemsWhenNotBound": true,
           "name": "Slot #7",
           "x": 187,
-          "y": 54
+          "y": 64
         }
       }
     ]

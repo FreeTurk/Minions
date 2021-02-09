@@ -175,13 +175,13 @@ public class IronMinion6GUIGui extends MinionsModElements.ModElement {
 					return false;
 				}
 			}));
-			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 66, 53) {
+			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 70, 63) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 66, 35) {
+			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 70, 45) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;

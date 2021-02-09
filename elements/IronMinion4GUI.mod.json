@@ -20,7 +20,7 @@
           },
           "name": "Iron Minion MK4",
           "x": 213,
-          "y": 47
+          "y": 48
         }
       },
       {
@@ -96,6 +96,28 @@
           "dropItemsWhenNotBound": true,
           "name": "Slot #5",
           "x": 260,
+          "y": 82
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #6",
+          "x": 187,
+          "y": 64
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 7,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #7",
+          "x": 187,
           "y": 82
         }
       }

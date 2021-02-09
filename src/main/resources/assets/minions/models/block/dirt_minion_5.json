@@ -1,0 +1,9 @@
+{
+  "parent": "minions:custom/dirtminionmk5",
+  "textures": {
+    "all": "minions:blocks/iron_minion5",
+    "particle": "minions:blocks/iron_minion5",
+    "2": "minions:blocks/dirt_steve",
+    "3": "minions:blocks/diamond_shovel"
+  }
+}

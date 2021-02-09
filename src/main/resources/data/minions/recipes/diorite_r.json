@@ -1,0 +1,22 @@
+{
+  "group": "minions",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minions:diorite_chunk"
+    },
+    {
+      "item": "minions:diorite_chunk"
+    },
+    {
+      "item": "minions:diorite_chunk"
+    },
+    {
+      "item": "minions:diorite_chunk"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diorite",
+    "count": 1
+  }
+}

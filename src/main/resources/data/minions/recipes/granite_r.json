@@ -1,0 +1,22 @@
+{
+  "group": "minions",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minions:granite_chunk"
+    },
+    {
+      "item": "minions:granite_chunk"
+    },
+    {
+      "item": "minions:granite_chunk"
+    },
+    {
+      "item": "minions:granite_chunk"
+    }
+  ],
+  "result": {
+    "item": "minecraft:granite",
+    "count": 1
+  }
+}

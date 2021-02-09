@@ -1,0 +1,22 @@
+{
+  "group": "minions",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minions:andesite_chunk"
+    },
+    {
+      "item": "minions:andesite_chunk"
+    },
+    {
+      "item": "minions:andesite_chunk"
+    },
+    {
+      "item": "minions:andesite_chunk"
+    }
+  ],
+  "result": {
+    "item": "minecraft:andesite",
+    "count": 1
+  }
+}

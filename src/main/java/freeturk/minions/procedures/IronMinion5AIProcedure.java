@@ -113,7 +113,7 @@ public class IronMinion5AIProcedure extends MinionsModElements.ModElement {
 					{
 						TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 						if (_ent != null) {
-							final int _sltid = (int) (0);
+							final int _sltid = (int) (1);
 							final ItemStack _setstack = new ItemStack(CompressedIronIngotItem.block, (int) (1));
 							_setstack.setCount((int) ((new Object() {
 								public int getAmount(IWorld world, BlockPos pos, int sltid) {
@@ -126,7 +126,7 @@ public class IronMinion5AIProcedure extends MinionsModElements.ModElement {
 									}
 									return _retval.get();
 								}
-							}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), (int) (0))) + 1));
+							}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), (int) (1))) + 1));
 							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable) {
 									((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);

@@ -83,7 +83,7 @@ public class IronMinion4GUIGui extends MinionsModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(6);
+			this.internal = new ItemStackHandler(8);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -157,6 +157,18 @@ public class IronMinion4GUIGui extends MinionsModElements.ModElement {
 					return false;
 				}
 			}));
+			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 70, 45) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
+			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 70, 63) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
@@ -182,18 +194,18 @@ public class IronMinion4GUIGui extends MinionsModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 6) {
-					if (!this.mergeItemStack(itemstack1, 6, this.inventorySlots.size(), true)) {
+				if (index < 8) {
+					if (!this.mergeItemStack(itemstack1, 8, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 6, false)) {
-					if (index < 6 + 27) {
-						if (!this.mergeItemStack(itemstack1, 6 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 8, false)) {
+					if (index < 8 + 27) {
+						if (!this.mergeItemStack(itemstack1, 8 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 6, 6 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 8, 8 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -368,7 +380,7 @@ public class IronMinion4GUIGui extends MinionsModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-			this.font.drawString(ms, "Iron Minion MK4", 95, 27, -12829636);
+			this.font.drawString(ms, "Iron Minion MK4", 95, 28, -12829636);
 		}
 
 		@Override

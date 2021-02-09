@@ -792,35 +792,326 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "granite_chunk"
+    },
+    {
+      "name": "AndesiteR",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "andesite_r"
+    },
+    {
+      "name": "CobbleR",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cobble_r"
+    },
+    {
+      "name": "DioriteR",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diorite_r"
+    },
+    {
+      "name": "GraniteR",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "granite_r"
+    },
+    {
+      "name": "DirtMinion4",
+      "type": "block",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_4"
+    },
+    {
+      "name": "DirtMinion4GUI",
+      "type": "gui",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_4_gui"
+    },
+    {
+      "name": "DirtMinion4AI",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_4_ai",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DirtMinion4R",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_4_r"
+    },
+    {
+      "name": "CompressedDirtx3",
+      "type": "block",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "compressed_dirtx_3"
+    },
+    {
+      "name": "CompDirt3R",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "comp_dirt_3_r"
+    },
+    {
+      "name": "CompDirt3RR",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "comp_dirt_3_rr"
+    },
+    {
+      "name": "DirtMinion5GUI",
+      "type": "gui",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_5_gui"
+    },
+    {
+      "name": "DirtMinion5AI",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_5_ai",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CompressedDirtx4",
+      "type": "block",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "compressed_dirtx_4"
+    },
+    {
+      "name": "CompDirt4R",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "comp_dirt_4_r"
+    },
+    {
+      "name": "CompDirt4RR",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "comp_dirt_4_rr"
+    },
+    {
+      "name": "DirtMinion5R",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_5_r"
+    },
+    {
+      "name": "DirtMinion5",
+      "type": "block",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_5"
+    },
+    {
+      "name": "CompressedDirtx5",
+      "type": "block",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "compressed_dirtx_5"
+    },
+    {
+      "name": "CompDirt5R",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "comp_dirt_5_r"
+    },
+    {
+      "name": "CompDirt5RR",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "comp_dirt_5_rr"
+    },
+    {
+      "name": "DirtMinion6AI",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_6_ai",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DirtMinion6GUI",
+      "type": "gui",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_6_gui"
+    },
+    {
+      "name": "DirtMinion6R",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_6_r"
+    },
+    {
+      "name": "DirtMinion6",
+      "type": "block",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_minion_6"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.minions.compressed_iron_nugget": "Compressed Iron Nugget",
       "item.minions.cobble_chunk": "Cobble Chunk",
+      "block.minions.compressed_dirt": "Compressed Dirt",
+      "block.minions.compressed_dirtx_3": "x3 Compressed Dirt",
+      "block.minions.compressed_dirtx_2": "x2 Compressed Dirt",
+      "block.minions.compressed_dirtx_5": "x5 Compressed Dirt",
+      "block.minions.compressed_dirtx_4": "x4 Compressed Dirt",
+      "item.minions.copper_ingot": "Copper",
+      "block.minions.copper_ore": "Copper Ore",
+      "block.minions.copper_block": "Block of Copper",
+      "item.minions.compressed_iron_nugget": "Compressed Iron Nugget",
       "block.minions.iron_minion_1": "Iron Minion MK1",
       "block.minions.iron_minion_2": "Iron Minion MK2",
       "item.minions.compressed_iron_ingot": "Compressed Iron Ingot",
       "item.minions.andesite_chunk": "Andesite Chunk",
       "block.minions.iron_minion_3": "Iron Minion MK3",
-      "block.minions.compressed_dirt": "Compressed Dirt",
       "item.minions.granite_chunk": "Granite Chunk",
       "block.minions.dirt_minion_2": "Dirt Minion MK2",
       "itemGroup.tabcreative_tab": "Minions",
       "block.minions.dirt_minion_1": "Dirt Minion MK1",
-      "block.minions.compressed_dirtx_2": "x2 Compressed Dirt",
-      "block.minions.dirt_minion_3": "Iron Minion MK3",
+      "block.minions.dirt_minion_4": "Dirt Minion MK4",
+      "block.minions.dirt_minion_3": "Dirt Minion MK3",
+      "block.minions.dirt_minion_6": "Dirt Minion MK6",
       "block.minions.compressed_iron_block": "Compressed Iron Block",
-      "item.minions.copper_ingot": "Copper",
       "item.minions.copper_nugget": "Copper Nugget",
-      "block.minions.copper_ore": "Copper Ore",
+      "block.minions.dirt_minion_5": "Dirt Minion MK5",
       "block.minions.iron_minion_4": "Iron Minion MK4",
       "block.minions.iron_minion_5": "Iron Minion MK5",
       "block.minions.iron_minion_6": "Iron Minion MK6",
-      "item.minions.diorite_chunk": "Diorite Chunk",
-      "block.minions.copper_block": "Block of Copper"
+      "item.minions.diorite_chunk": "Diorite Chunk"
     }
   },
   "workspaceSettings": {

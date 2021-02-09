@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minions:blocks/4compdirt",
+    "up": "minions:blocks/4compdirt",
+    "north": "minions:blocks/4compdirt",
+    "east": "minions:blocks/4compdirt",
+    "south": "minions:blocks/4compdirt",
+    "west": "minions:blocks/4compdirt",
+    "particle": "minions:blocks/4compdirt"
+  }
+}
