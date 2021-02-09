@@ -1,0 +1,46 @@
+{
+  "_fv": 15,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CompressedDirtx2"
+      },
+      {
+        "value": "CUSTOM:CompressedDirtx2"
+      },
+      {
+        "value": "CUSTOM:CompressedDirtx2"
+      },
+      {
+        "value": "CUSTOM:CompressedDirtx2"
+      },
+      {
+        "value": "Items.IRON_SHOVEL"
+      },
+      {
+        "value": "CUSTOM:CompressedDirtx2"
+      },
+      {
+        "value": "CUSTOM:CompressedDirtx2"
+      },
+      {
+        "value": "CUSTOM:DirtMinion2"
+      },
+      {
+        "value": "CUSTOM:CompressedDirtx2"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DirtMinion3"
+    },
+    "name": "dirt_minion_3_r",
+    "namespace": "mod"
+  }
+}

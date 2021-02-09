@@ -77,9 +77,9 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "guiBoundTo": "IronMinion3GUI",
+    "guiBoundTo": "DirtMinion3GUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 8,
+    "inventorySize": 10,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -91,7 +91,9 @@
       4,
       5,
       6,
-      7
+      7,
+      8,
+      9
     ],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
@@ -103,7 +105,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "IronMinion3AI"
+      "name": "DirtMinion3AI"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

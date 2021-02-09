@@ -2,8 +2,8 @@
   "mappings": {
     "default": {
       "map": {
-        "2": "stevehi",
-        "4": "stone_pickaxe"
+        "2": "dirt_steve",
+        "3": "iron_shovel"
       },
       "name": "default"
     }

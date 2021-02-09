@@ -22,7 +22,7 @@ public class CreativeTabItemGroup extends MinionsModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(Items.ZOMBIE_HEAD, (int) (1));
+				return new ItemStack(Items.NETHERITE_PICKAXE, (int) (1));
 			}
 
 			@OnlyIn(Dist.CLIENT)

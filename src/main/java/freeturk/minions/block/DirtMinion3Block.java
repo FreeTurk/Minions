@@ -75,19 +75,19 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-import freeturk.minions.procedures.IronMinion3AIProcedure;
+import freeturk.minions.procedures.DirtMinion3AIProcedure;
 import freeturk.minions.itemgroup.CreativeTabItemGroup;
-import freeturk.minions.gui.IronMinion3GUIGui;
+import freeturk.minions.gui.DirtMinion3GUIGui;
 import freeturk.minions.MinionsModElements;
 
 @MinionsModElements.ModElement.Tag
-public class IronMinion3Block extends MinionsModElements.ModElement {
-	@ObjectHolder("minions:iron_minion_3")
+public class DirtMinion3Block extends MinionsModElements.ModElement {
+	@ObjectHolder("minions:dirt_minion_3")
 	public static final Block block = null;
-	@ObjectHolder("minions:iron_minion_3")
+	@ObjectHolder("minions:dirt_minion_3")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public IronMinion3Block(MinionsModElements instance) {
-		super(instance, 9);
+	public DirtMinion3Block(MinionsModElements instance) {
+		super(instance, 63);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
@@ -100,7 +100,7 @@ public class IronMinion3Block extends MinionsModElements.ModElement {
 	private static class TileEntityRegisterHandler {
 		@SubscribeEvent
 		public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("iron_minion_3"));
+			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("dirt_minion_3"));
 		}
 	}
 	@Override
@@ -114,7 +114,7 @@ public class IronMinion3Block extends MinionsModElements.ModElement {
 			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(1)
 					.harvestTool(ToolType.PICKAXE).notSolid().setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-			setRegistryName("iron_minion_3");
+			setRegistryName("dirt_minion_3");
 		}
 
 		@Override
@@ -193,7 +193,7 @@ public class IronMinion3Block extends MinionsModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				IronMinion3AIProcedure.executeProcedure($_dependencies);
+				DirtMinion3AIProcedure.executeProcedure($_dependencies);
 			}
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 700);
 		}
@@ -214,7 +214,7 @@ public class IronMinion3Block extends MinionsModElements.ModElement {
 
 					@Override
 					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
-						return new IronMinion3GUIGui.GuiContainerMod(id, inventory,
+						return new DirtMinion3GUIGui.GuiContainerMod(id, inventory,
 								new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
 					}
 				}, new BlockPos(x, y, z));
@@ -273,7 +273,7 @@ public class IronMinion3Block extends MinionsModElements.ModElement {
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(8, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(10, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}
@@ -326,7 +326,7 @@ public class IronMinion3Block extends MinionsModElements.ModElement {
 
 		@Override
 		public ITextComponent getDefaultName() {
-			return new StringTextComponent("iron_minion_3");
+			return new StringTextComponent("dirt_minion_3");
 		}
 
 		@Override
@@ -336,7 +336,7 @@ public class IronMinion3Block extends MinionsModElements.ModElement {
 
 		@Override
 		public Container createMenu(int id, PlayerInventory player) {
-			return new IronMinion3GUIGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
+			return new DirtMinion3GUIGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
 		}
 
 		@Override
@@ -371,6 +371,10 @@ public class IronMinion3Block extends MinionsModElements.ModElement {
 			if (index == 6)
 				return false;
 			if (index == 7)
+				return false;
+			if (index == 8)
+				return false;
+			if (index == 9)
 				return false;
 			return true;
 		}

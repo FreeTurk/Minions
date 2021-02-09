@@ -4,12 +4,15 @@
   "block.minions.iron_minion_1": "Iron Minion MK1",
   "block.minions.iron_minion_2": "Iron Minion MK2",
   "item.minions.compressed_iron_ingot": "Compressed Iron Ingot",
+  "item.minions.andesite_chunk": "Andesite Chunk",
   "block.minions.iron_minion_3": "Iron Minion MK3",
   "block.minions.compressed_dirt": "Compressed Dirt",
+  "item.minions.granite_chunk": "Granite Chunk",
   "block.minions.dirt_minion_2": "Dirt Minion MK2",
   "itemGroup.tabcreative_tab": "Minions",
   "block.minions.dirt_minion_1": "Dirt Minion MK1",
   "block.minions.compressed_dirtx_2": "x2 Compressed Dirt",
+  "block.minions.dirt_minion_3": "Iron Minion MK3",
   "block.minions.compressed_iron_block": "Compressed Iron Block",
   "item.minions.copper_ingot": "Copper",
   "item.minions.copper_nugget": "Copper Nugget",
@@ -17,5 +20,6 @@
   "block.minions.iron_minion_4": "Iron Minion MK4",
   "block.minions.iron_minion_5": "Iron Minion MK5",
   "block.minions.iron_minion_6": "Iron Minion MK6",
+  "item.minions.diorite_chunk": "Diorite Chunk",
   "block.minions.copper_block": "Block of Copper"
 }
