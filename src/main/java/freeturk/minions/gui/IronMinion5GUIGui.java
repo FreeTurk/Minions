@@ -83,7 +83,7 @@ public class IronMinion5GUIGui extends MinionsModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(9);
+			this.internal = new ItemStackHandler(11);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -175,6 +175,18 @@ public class IronMinion5GUIGui extends MinionsModElements.ModElement {
 					return false;
 				}
 			}));
+			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 66, 53) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
+			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 66, 35) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
@@ -200,18 +212,18 @@ public class IronMinion5GUIGui extends MinionsModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 9) {
-					if (!this.mergeItemStack(itemstack1, 9, this.inventorySlots.size(), true)) {
+				if (index < 11) {
+					if (!this.mergeItemStack(itemstack1, 11, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 9, false)) {
-					if (index < 9 + 27) {
-						if (!this.mergeItemStack(itemstack1, 9 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 11, false)) {
+					if (index < 11 + 27) {
+						if (!this.mergeItemStack(itemstack1, 11 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 9, 9 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 11, 11 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}

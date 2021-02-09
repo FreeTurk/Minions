@@ -5,7 +5,6 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.MaterialColor;
@@ -17,6 +16,7 @@ import net.minecraft.block.Block;
 import java.util.List;
 import java.util.Collections;
 
+import freeturk.minions.itemgroup.CreativeTabItemGroup;
 import freeturk.minions.MinionsModElements;
 
 @MinionsModElements.ModElement.Tag
@@ -31,7 +31,7 @@ public class CompressedIronBlockBlock extends MinionsModElements.ModElement {
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
+				.add(() -> new BlockItem(block, new Item.Properties().group(CreativeTabItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {

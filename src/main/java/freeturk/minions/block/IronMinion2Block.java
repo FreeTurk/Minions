@@ -44,7 +44,6 @@ import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
@@ -77,6 +76,7 @@ import java.util.Collections;
 import io.netty.buffer.Unpooled;
 
 import freeturk.minions.procedures.IronMinion2AIProcedure;
+import freeturk.minions.itemgroup.CreativeTabItemGroup;
 import freeturk.minions.gui.IronMinion2GUIGui;
 import freeturk.minions.MinionsModElements;
 
@@ -95,7 +95,7 @@ public class IronMinion2Block extends MinionsModElements.ModElement {
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
+				.add(() -> new BlockItem(block, new Item.Properties().group(CreativeTabItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	private static class TileEntityRegisterHandler {
 		@SubscribeEvent

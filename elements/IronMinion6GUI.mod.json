@@ -142,6 +142,17 @@
           "x": 183,
           "y": 72
         }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 10,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #10",
+          "x": 183,
+          "y": 54
+        }
       }
     ]
   }

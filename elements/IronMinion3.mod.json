@@ -33,7 +33,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:CreativeTab"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -48,7 +48,7 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 700,
+    "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -79,7 +79,7 @@
     "hasInventory": true,
     "guiBoundTo": "IronMinion3GUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 7,
+    "inventorySize": 8,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -90,7 +90,8 @@
       3,
       4,
       5,
-      6
+      6,
+      7
     ],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,

@@ -3,7 +3,7 @@
   "textures": {
     "all": "minions:blocks/iron_minion1",
     "particle": "minions:blocks/iron_minion1",
-    "2": "minions:blocks/stevehi",
-    "4": "minions:blocks/stone_pickaxe"
+    "2": "minions:blocks/",
+    "4": "minions:blocks/"
   }
 }

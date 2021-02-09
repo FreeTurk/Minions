@@ -33,7 +33,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:CreativeTab"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -79,7 +79,7 @@
     "hasInventory": true,
     "guiBoundTo": "IronMinion4GUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 6,
+    "inventorySize": 8,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -89,7 +89,9 @@
       2,
       3,
       4,
-      5
+      5,
+      6,
+      7
     ],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,

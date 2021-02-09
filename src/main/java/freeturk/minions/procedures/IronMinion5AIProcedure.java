@@ -13,6 +13,7 @@ import net.minecraft.block.Blocks;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.Map;
 
+import freeturk.minions.item.CopperNuggetItem;
 import freeturk.minions.item.CompressedIronIngotItem;
 import freeturk.minions.MinionsModElements;
 import freeturk.minions.MinionsMod;
@@ -500,6 +501,43 @@ public class IronMinion5AIProcedure extends MinionsModElements.ModElement {
 								return _retval.get();
 							}
 						}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), (int) (9))) + 1));
+						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							if (capability instanceof IItemHandlerModifiable) {
+								((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+							}
+						});
+					}
+				}
+			}
+			if (((new Object() {
+				public int getAmount(IWorld world, BlockPos pos, int sltid) {
+					AtomicInteger _retval = new AtomicInteger(0);
+					TileEntity _ent = world.getTileEntity(pos);
+					if (_ent != null) {
+						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_retval.set(capability.getStackInSlot(sltid).getCount());
+						});
+					}
+					return _retval.get();
+				}
+			}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), (int) (10))) != 64)) {
+				{
+					TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+					if (_ent != null) {
+						final int _sltid = (int) (10);
+						final ItemStack _setstack = new ItemStack(CopperNuggetItem.block, (int) (1));
+						_setstack.setCount((int) ((new Object() {
+							public int getAmount(IWorld world, BlockPos pos, int sltid) {
+								AtomicInteger _retval = new AtomicInteger(0);
+								TileEntity _ent = world.getTileEntity(pos);
+								if (_ent != null) {
+									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+										_retval.set(capability.getStackInSlot(sltid).getCount());
+									});
+								}
+								return _retval.get();
+							}
+						}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), (int) (10))) + 1));
 						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 							if (capability instanceof IItemHandlerModifiable) {
 								((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);

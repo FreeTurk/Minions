@@ -40,7 +40,6 @@ import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.inventory.container.INamedContainerProvider;
@@ -71,6 +70,7 @@ import java.util.Collections;
 import io.netty.buffer.Unpooled;
 
 import freeturk.minions.procedures.IronMinion4AIProcedure;
+import freeturk.minions.itemgroup.CreativeTabItemGroup;
 import freeturk.minions.gui.IronMinion4GUIGui;
 import freeturk.minions.MinionsModElements;
 
@@ -89,7 +89,7 @@ public class IronMinion4Block extends MinionsModElements.ModElement {
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
+				.add(() -> new BlockItem(block, new Item.Properties().group(CreativeTabItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	private static class TileEntityRegisterHandler {
 		@SubscribeEvent
@@ -234,7 +234,7 @@ public class IronMinion4Block extends MinionsModElements.ModElement {
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(6, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(8, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}
@@ -328,6 +328,10 @@ public class IronMinion4Block extends MinionsModElements.ModElement {
 			if (index == 4)
 				return false;
 			if (index == 5)
+				return false;
+			if (index == 6)
+				return false;
+			if (index == 7)
 				return false;
 			return true;
 		}
